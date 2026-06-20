@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XYZ Digital - Solusi Transformasi Digital & Keamanan Siber</title>
+    <meta name="description" content="XYZ Digital membantu bisnis Anda berkembang dengan layanan transformasi digital, infrastruktur cloud aman, dan aplikasi kustom berkinerja tinggi.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-mode">
+
+    <!-- WhatsApp Floating CTA -->
+    <a href="https://wa.me/6281234567890?text=Halo%20XYZ%20Digital,%20saya%20tertarik%20dengan%20layanan%20Anda..." target="_blank" rel="noopener noreferrer" class="whatsapp-float" id="whatsapp-cta">
+        <div class="pulse-ring"></div>
+        <i data-lucide="message-circle" class="whatsapp-icon"></i>
+        <span class="whatsapp-tooltip">Ada pertanyaan? Chat kami sekarang!</span>
+    </a>
+
+    <!-- Sticky Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <div class="logo-icon">
+                    <i data-lucide="cpu" class="logo-symbol"></i>
+                </div>
+                <span class="logo-text">XYZ<span class="text-accent">Digital</span></span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#beranda" class="nav-link active">Beranda</a>
+                <a href="#layanan" class="nav-link">Layanan</a>
+                <a href="#tentang" class="nav-link">Tentang Kami</a>
+                <a href="#testimoni" class="nav-link">Testimoni</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+                <a href="#kontak" class="nav-link">Kontak</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme">
+                    <i data-lucide="moon" class="theme-icon moon-icon"></i>
+                    <i data-lucide="sun" class="theme-icon sun-icon"></i>
+                </button>
+                <a href="#kontak" class="btn btn-outline nav-cta">Hubungi Kami</a>
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Open Menu">
+                    <i data-lucide="menu" class="menu-open"></i>
+                    <i data-lucide="x" class="menu-close"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section with Dynamic Slider -->
+        <section id="beranda" class="hero-section">
+            <div class="slider-container" id="hero-slider">
+                <!-- Slide 1 -->
+                <div class="slide active" data-slide="0">
+                    <div class="slide-overlay-gradient"></div>
+                    <div class="slide-content-wrapper">
+                        <div class="slide-content">
+                            <span class="slide-badge">⚡ Transformasi Digital</span>
+                            <h1 class="slide-title">Solusi Digital untuk <span class="text-gradient">Pertumbuhan</span> Bisnis Anda</h1>
+                            <p class="slide-desc">Kami merancang dan membangun platform digital inovatif yang membantu bisnis Anda beradaptasi, berkembang, dan memimpin di era modern.</p>
+                            <div class="slide-actions">
+                                <a href="#kontak" class="btn btn-primary">Mulai Sekarang</a>
+                                <a href="#layanan" class="btn btn-secondary">Pelajari Selengkapnya</a>
+                            </div>
+                        </div>
+                        <div class="slide-visual">
+                            <div class="visual-card blob-1">
+                                <div class="floating-dashboard">
+                                    <div class="dash-header">
+                                        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                                    </div>
+                                    <div class="dash-body">
+                                        <div class="dash-row">
+                                            <div class="dash-bar" style="width: 70%;"></div>
+                                        </div>
+                                        <div class="dash-row">
+                                            <div class="dash-bar" style="width: 45%;"></div>
+                                        </div>
+                                        <div class="dash-row">
+                                            <div class="dash-bar" style="width: 90%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="floating-chart">
+                                    <svg viewBox="0 0 100 40" class="chart-svg">
+                                        <path d="M 0 35 Q 25 15 50 25 T 100 5 L 100 40 L 0 40 Z" fill="url(#chart-grad)" />
+                                        <path d="M 0 35 Q 25 15 50 25 T 100 5" fill="none" stroke="#0ea5e9" stroke-width="2" />
+                                        <defs>
+                                            <linearGradient id="chart-grad" x1="0" y1="0" x2="0" y2="1">
+                                                <stop offset="0%" stop-color="#0ea5e9" stop-opacity="0.4"/>
+                                                <stop offset="100%" stop-color="#0ea5e9" stop-opacity="0.0"/>
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="slide" data-slide="1">
+                    <div class="slide-overlay-gradient"></div>
+                    <div class="slide-content-wrapper">
+                        <div class="slide-content">
+                            <span class="slide-badge">🛡️ Keamanan Siber</span>
+                            <h1 class="slide-title">Proteksi Maksimal untuk <span class="text-gradient">Data & Aset</span> Penting</h1>
+                            <p class="slide-desc">Amankan infrastruktur IT Anda dari ancaman keamanan digital dengan sistem proteksi berlapis dan audit keamanan bersertifikasi.</p>
+                            <div class="slide-actions">
+                                <a href="#kontak" class="btn btn-primary">Konsultasi Keamanan</a>
+                                <a href="#tentang" class="btn btn-secondary">Tentang Kami</a>
+                            </div>
+                        </div>
+                        <div class="slide-visual">
+                            <div class="visual-card blob-2">
+                                <div class="shield-container">
+                                    <i data-lucide="shield-check" class="shield-icon"></i>
+                                    <div class="radar-ping"></div>
+                                </div>
+                                <div class="floating-badge-cyber">
+                                    <i data-lucide="lock" class="lock-icon"></i>
+                                    <span>Encrypted 256-bit</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="slide" data-slide="2">
+                    <div class="slide-overlay-gradient"></div>
+                    <div class="slide-content-wrapper">
+                        <div class="slide-content">
+                            <span class="slide-badge">🚀 Infrastruktur Cloud</span>
+                            <h1 class="slide-title">Migrasi Cloud & <span class="text-gradient">Skalabilitas</span> Tanpa Batas</h1>
+                            <p class="slide-desc">Desain arsitektur cloud server yang tangguh, hemat biaya, dan siap berkembang seiring bertambahnya trafik pengguna bisnis Anda.</p>
+                            <div class="slide-actions">
+                                <a href="#kontak" class="btn btn-primary">Hubungi Tim Cloud</a>
+                                <a href="#layanan" class="btn btn-secondary">Solusi Kami</a>
+                            </div>
+                        </div>
+                        <div class="slide-visual">
+                            <div class="visual-card blob-3">
+                                <div class="cloud-network-visual">
+                                    <div class="node c-node"><i data-lucide="cloud"></i></div>
+                                    <div class="node db-node"><i data-lucide="database"></i></div>
+                                    <div class="node code-node"><i data-lucide="terminal"></i></div>
+                                    <svg class="network-lines">
+                                        <line x1="50%" y1="15%" x2="20%" y2="70%" stroke="#0ea5e9" stroke-width="1.5" stroke-dasharray="4"/>
+                                        <line x1="50%" y1="15%" x2="80%" y2="70%" stroke="#0ea5e9" stroke-width="1.5" stroke-dasharray="4"/>
+                                        <line x1="20%" y1="70%" x2="80%" y2="70%" stroke="#0ea5e9" stroke-width="1.5"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slider Arrows -->
+                <button class="slider-arrow arrow-left" id="prev-slide" aria-label="Previous Slide">
+                    <i data-lucide="chevron-left"></i>
+                </button>
+                <button class="slider-arrow arrow-right" id="next-slide" aria-label="Next Slide">
+                    <i data-lucide="chevron-right"></i>
+                </button>
+
+                <!-- Slider Indicators -->
+                <div class="slider-indicators" id="slider-indicators">
+                    <button class="indicator active" data-slide="0" aria-label="Go to Slide 1"></button>
+                    <button class="indicator" data-slide="1" aria-label="Go to Slide 2"></button>
+                    <button class="indicator" data-slide="2" aria-label="Go to Slide 3"></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bento Grid Services Section -->
+        <section id="layanan" class="services-section container section-padding">
+            <div class="section-header">
+                <span class="section-tag">Layanan Utama</span>
+                <h2 class="section-title">Solusi Bisnis Komprehensif</h2>
+                <p class="section-subtitle">Kami menyediakan berbagai layanan teknologi kelas dunia untuk mendukung akselerasi pertumbuhan bisnis Anda secara aman.</p>
+            </div>
+
+            <div class="bento-grid">
+                <!-- Bento Card 1: Digital Transformation -->
+                <div class="bento-card col-span-2 card-hover animate-on-scroll">
+                    <div class="bento-card-bg-gradient tint-blue"></div>
+                    <div class="bento-card-content">
+                        <div class="card-icon-wrapper text-blue">
+                            <i data-lucide="trending-up"></i>
+                        </div>
+                        <h3 class="card-title">Transformasi Digital & Strategi IT</h3>
+                        <p class="card-desc">Beralihlah dari sistem manual ke alur kerja otomatis yang efisien. Kami membantu mendesain ulang proses bisnis Anda agar terintegrasi penuh dengan teknologi cloud, analitik data, dan platform modern.</p>
+                        <div class="card-tags">
+                            <span class="card-tag-item">Konsultasi IT</span>
+                            <span class="card-tag-item">Otomatisasi</span>
+                            <span class="card-tag-item">Analitik Data</span>
+                        </div>
+                    </div>
+                    <div class="bento-card-graphics">
+                        <div class="bar-chart-visual">
+                            <div class="bar-item" style="--val: 40%"></div>
+                            <div class="bar-item highlight" style="--val: 75%"></div>
+                            <div class="bar-item" style="--val: 55%"></div>
+                            <div class="bar-item" style="--val: 90%"></div>
+                            <div class="bar-item" style="--val: 60%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bento Card 2: Cyber Security -->
+                <div class="bento-card card-hover animate-on-scroll">
+                    <div class="bento-card-bg-gradient tint-green"></div>
+                    <div class="bento-card-content">
+                        <div class="card-icon-wrapper text-green">
+                            <i data-lucide="shield"></i>
+                        </div>
+                        <h3 class="card-title">Keamanan Siber</h3>
+                        <p class="card-desc">Lindungi infrastruktur digital Anda dengan sistem keamanan berlapis, enkripsi mutakhir, pengujian penetrasi (Pentest), dan pemantauan ancaman secara real-time.</p>
+                        <div class="card-tags">
+                            <span class="card-tag-item">Pentest</span>
+                            <span class="card-tag-item">Firewall</span>
+                            <span class="card-tag-item">Audit IT</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bento Card 3: Cloud Infrastructure -->
+                <div class="bento-card card-hover animate-on-scroll">
+                    <div class="bento-card-bg-gradient tint-purple"></div>
+                    <div class="bento-card-content">
+                        <div class="card-icon-wrapper text-purple">
+                            <i data-lucide="cloud-lightning"></i>
+                        </div>
+                        <h3 class="card-title">Infrastruktur Cloud</h3>
+                        <p class="card-desc">Layanan migrasi, manajemen, dan optimasi arsitektur cloud di AWS, Google Cloud, atau Azure. Didesain untuk uptime tinggi dan biaya optimal.</p>
+                        <div class="card-tags">
+                            <span class="card-tag-item">AWS/GCP</span>
+                            <span class="card-tag-item">DevOps</span>
+                            <span class="card-tag-item">Serverless</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bento Card 4: Custom Software Dev -->
+                <div class="bento-card col-span-2 card-hover animate-on-scroll">
+                    <div class="bento-card-bg-gradient tint-teal"></div>
+                    <div class="bento-card-content">
+                        <div class="card-icon-wrapper text-teal">
+                            <i data-lucide="code-2"></i>
+                        </div>
+                        <h3 class="card-title">Pengembangan Software Kustom</h3>
+                        <p class="card-desc">Kami mengembangkan sistem web dinamis, aplikasi mobile Android & iOS, serta sistem enterprise internal ERP/CRM yang disesuaikan secara khusus dengan proses operasional unik perusahaan Anda.</p>
+                        <div class="card-tags">
+                            <span class="card-tag-item">Web App</span>
+                            <span class="card-tag-item">Mobile App</span>
+                            <span class="card-tag-item">Custom API</span>
+                        </div>
+                    </div>
+                    <div class="bento-card-graphics">
+                        <div class="code-editor-visual">
+                            <div class="editor-header">
+                                <span class="editor-dot red"></span><span class="editor-dot yellow"></span><span class="editor-dot green"></span>
+                                <span class="editor-title">app.js</span>
+                            </div>
+                            <div class="editor-body">
+                                <code><span class="code-keyword">const</span> app = <span class="code-function">initXYZ</span>();</code>
+                                <code>app.<span class="code-function">scale</span>({ secure: <span class="code-boolean">true</span> });</code>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About & Stats Section -->
+        <section id="tentang" class="about-section bg-light section-padding">
+            <div class="container split-layout">
+                <!-- Left: visual context -->
+                <div class="about-visual animate-on-scroll">
+                    <div class="about-card-container">
+                        <div class="about-glow"></div>
+                        <div class="about-image-card">
+                            <div class="about-image-overlay"></div>
+                            <!-- Styled vector graphic simulating tech company growth -->
+                            <div class="tech-graphic">
+                                <i data-lucide="users" class="tech-g-icon icon-1"></i>
+                                <i data-lucide="zap" class="tech-g-icon icon-2"></i>
+                                <i data-lucide="activity" class="tech-g-icon icon-3"></i>
+                                <div class="tech-grid-lines"></div>
+                                <div class="pulse-node"></div>
+                            </div>
+                        </div>
+                        <div class="floating-info-card">
+                            <div class="float-icon"><i data-lucide="award"></i></div>
+                            <div>
+                                <h4 class="float-title">Mitra Terpercaya</h4>
+                                <p class="float-subtitle">Sertifikasi Standar Global</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: text content and stats -->
+                <div class="about-text animate-on-scroll">
+                    <span class="section-tag">Tentang Kami</span>
+                    <h2 class="section-title text-left">XYZ Digital Adalah Mitra Pertumbuhan Teknologi Anda</h2>
+                    <p class="about-paragraph">
+                        Sejak didirikan, XYZ Digital telah berkomitmen untuk membawa solusi teknologi modern ke berbagai skala industri. Kami memadukan keahlian teknik tingkat tinggi, wawasan bisnis, dan metodologi kerja tangkas (agile) untuk menghadirkan produk digital yang bernilai tinggi bagi bisnis Anda.
+                    </p>
+                    <p class="about-paragraph">
+                        Kami tidak hanya membangun software, kami membangun masa depan bisnis Anda melalui arsitektur IT yang tangguh, aman, dan siap menghadapi tantangan pasar yang terus berubah secara cepat.
+                    </p>
+
+                    <!-- Stats Grid -->
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <h3 class="stat-number" data-target="150">0</h3>
+                            <span class="stat-plus">+</span>
+                            <p class="stat-label">Proyek Sukses</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3 class="stat-number" data-target="99">0</h3>
+                            <span class="stat-plus">%</span>
+                            <p class="stat-label">Kepuasan Klien</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3 class="stat-number" data-target="50">0</h3>
+                            <span class="stat-plus">+</span>
+                            <p class="stat-label">Tenaga Ahli</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3 class="stat-number" data-target="10">0</h3>
+                            <span class="stat-plus">+</span>
+                            <p class="stat-label">Tahun Pengalaman</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Proof: Clients & Testimonials Section -->
+        <section id="testimoni" class="social-proof-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Kredibilitas</span>
+                    <h2 class="section-title">Dipercaya Oleh Berbagai Perusahaan</h2>
+                    <p class="section-subtitle">Kami telah bermitra dengan perusahaan startup terkemuka, UKM berkembang, hingga BUMN untuk mempercepat akselerasi digital mereka.</p>
+                </div>
+
+                <!-- Client Marquee -->
+                <div class="client-marquee-container">
+                    <div class="marquee-track">
+                        <!-- Logos (duplicated for continuous scrolling loop) -->
+                        <div class="client-logo"><i data-lucide="layers" class="logo-svg"></i><span>AeroSpace</span></div>
+                        <div class="client-logo"><i data-lucide="pocket" class="logo-svg"></i><span>FintechCo</span></div>
+                        <div class="client-logo"><i data-lucide="infinity" class="logo-svg"></i><span>NovaAI</span></div>
+                        <div class="client-logo"><i data-lucide="database" class="logo-svg"></i><span>DataPulse</span></div>
+                        <div class="client-logo"><i data-lucide="hexagon" class="logo-svg"></i><span>ApexGroup</span></div>
+                        <div class="client-logo"><i data-lucide="git-branch" class="logo-svg"></i><span>CodeFlow</span></div>
+                        <!-- Duplicated for seamless loop -->
+                        <div class="client-logo"><i data-lucide="layers" class="logo-svg"></i><span>AeroSpace</span></div>
+                        <div class="client-logo"><i data-lucide="pocket" class="logo-svg"></i><span>FintechCo</span></div>
+                        <div class="client-logo"><i data-lucide="infinity" class="logo-svg"></i><span>NovaAI</span></div>
+                        <div class="client-logo"><i data-lucide="database" class="logo-svg"></i><span>DataPulse</span></div>
+                        <div class="client-logo"><i data-lucide="hexagon" class="logo-svg"></i><span>ApexGroup</span></div>
+                        <div class="client-logo"><i data-lucide="git-branch" class="logo-svg"></i><span>CodeFlow</span></div>
+                    </div>
+                </div>
+
+                <!-- Testimonials Carousel -->
+                <div class="testimonials-container animate-on-scroll">
+                    <div class="testimonial-slider-wrapper">
+                        <div class="testimonial-track" id="testimonial-track">
+                            <!-- Testimonial 1 -->
+                            <div class="testimonial-card">
+                                <div class="testi-header">
+                                    <div class="testi-stars">
+                                        <i data-lucide="star" class="star-fill"></i>
+                                        <i data-lucide="star" class="star-fill"></i>
+                                        <i data-lucide="star" class="star-fill"></i>
+                                        <i data-lucide="star" class="star-fill"></i>
+                                        <i data-lucide="star" class="star-fill"></i>
+                                    </div>
+                                    <i data-lucide="quote" class="quote-icon"></i>
+                                </div>
+                                <p class="testi-text">"Kerja sama dengan XYZ Digital merupakan keputusan terbaik bagi perusahaan kami. Sistem ERP kustom yang mereka bangun berhasil memotong waktu proses operasional inventaris kami hingga 40%. Tim mereka sangat profesional, tanggap, dan solutif."</p>
+                                <div class="testi-user">
+                                    <div class="testi-avatar bg-gradient-avatar-1">AH</div>
+                                    <div class="testi-info">
+                                        <h4 class="testi-name">Aditya Hermansyah</h4>
+                                        <span class="testi-role">Direktur Operasional, AeroSpace Indonesia</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Testimonial 2 -->
+                            <div class="testimonial-card">
+                                <div class="testi-header">
+                                    <div class="testi-stars">
+                                        <i data-lucide="star" class="star-fill"></i>
+                                        <i data-lucide="star" class="star-fill"></i>
+                                        <i data-lucide="star" class="star-fill"></i>
+                                        <i data-lucide="star" class="star-fill"></i>
+                                        <i data-lucide="star" class="star-fill"></i>
+                                    </div>
+                                    <i data-lucide="quote" class="quote-icon"></i>
+                                </div>
+                                <p class="testi-text">"Dari sudut pandang keamanan, XYZ Digital memberikan jaminan keamanan data tingkat tinggi. Setelah audit IT dan penguatan sistem siber yang mereka lakukan, kami merasa jauh lebih tenang mengelola transaksi keuangan ratusan ribu pengguna harian kami."</p>
+                                <div class="testi-user">
+                                    <div class="testi-avatar bg-gradient-avatar-2">RK</div>
+                                    <div class="testi-info">
+                                        <h4 class="testi-name">Rian Kusuma</h4>
+                                        <span class="testi-role">Chief Technology Officer, FintechCo</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Testimonial 3 -->
+                            <div class="testimonial-card">
+                                <div class="testi-header">
+                                    <div class="testi-stars">
+                                        <i data-lucide="star" class="star-fill"></i>
+                                        <i data-lucide="star" class="star-fill"></i>
+                                        <i data-lucide="star" class="star-fill"></i>
+                                        <i data-lucide="star" class="star-fill"></i>
+                                        <i data-lucide="star" class="star-fill"></i>
+                                    </div>
+                                    <i data-lucide="quote" class="quote-icon"></i>
+                                </div>
+                                <p class="testi-text">"Proses migrasi ke infrastruktur cloud server berjalan mulus tanpa downtime sama sekali. XYZ Digital mendesain arsitektur cloud serverless yang sekarang sangat responsif dan otomatis hemat biaya saat trafik sedang rendah. Sangat direkomendasikan!"</p>
+                                <div class="testi-user">
+                                    <div class="testi-avatar bg-gradient-avatar-3">SD</div>
+                                    <div class="testi-info">
+                                        <h4 class="testi-name">Siti Dewi</h4>
+                                        <span class="testi-role">Head of Product, NovaAI</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Navigation for Testimonials -->
+                    <div class="testimonial-nav">
+                        <button class="testi-btn btn-prev" id="testi-prev" aria-label="Previous Testimonial">
+                            <i data-lucide="arrow-left"></i>
+                        </button>
+                        <div class="testi-indicators" id="testi-indicators">
+                            <button class="testi-indicator active" data-slide="0" aria-label="Go to Slide 1"></button>
+                            <button class="testi-indicator" data-slide="1" aria-label="Go to Slide 2"></button>
+                            <button class="testi-indicator" data-slide="2" aria-label="Go to Slide 3"></button>
+                        </div>
+                        <button class="testi-btn btn-next" id="testi-next" aria-label="Next Testimonial">
+                            <i data-lucide="arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Accordion Section -->
+        <section id="faq" class="faq-section bg-light section-padding">
+            <div class="container slim-container">
+                <div class="section-header">
+                    <span class="section-tag">FAQ</span>
+                    <h2 class="section-title">Pertanyaan yang Sering Diajukan</h2>
+                    <p class="section-subtitle">Cari tahu jawaban dari pertanyaan umum mengenai layanan, proses kolaborasi, dan jaminan keamanan IT kami.</p>
+                </div>
+
+                <div class="faq-accordion-wrapper animate-on-scroll">
+                    <!-- FAQ Item 1 -->
+                    <div class="faq-item">
+                        <button class="faq-trigger" aria-expanded="false">
+                            <span class="faq-question">Bagaimana alur kerja awal pengerjaan proyek di XYZ Digital?</span>
+                            <span class="faq-icon-wrapper">
+                                <i data-lucide="plus" class="faq-plus-icon"></i>
+                                <i data-lucide="minus" class="faq-minus-icon"></i>
+                            </span>
+                        </button>
+                        <div class="faq-panel">
+                            <div class="faq-content">
+                                <p>Proses kami dimulai dengan fase konsultasi mendalam untuk memahami masalah bisnis Anda. Selanjutnya, kami membuat rancangan solusi teknis, estimasi biaya, dan linimasa proyek. Setelah disepakati, kami bekerja secara iteratif (agile) dengan update mingguan agar Anda dapat memantau progres secara berkala hingga tahap rilis dan pemeliharaan.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 2 -->
+                    <div class="faq-item">
+                        <button class="faq-trigger" aria-expanded="false">
+                            <span class="faq-question">Berapa lama waktu yang dibutuhkan untuk pengembangan aplikasi?</span>
+                            <span class="faq-icon-wrapper">
+                                <i data-lucide="plus" class="faq-plus-icon"></i>
+                                <i data-lucide="minus" class="faq-minus-icon"></i>
+                            </span>
+                        </button>
+                        <div class="faq-panel">
+                            <div class="faq-content">
+                                <p>Durasi pengerjaan sangat bergantung pada kompleksitas fitur dan skala sistem. Landing page atau website profil biasanya selesai dalam 2-3 minggu. Sedangkan aplikasi web/mobile yang memiliki sistem database rumit dan kustomisasi API memerlukan waktu berkisar antara 2 hingga 6 bulan.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 3 -->
+                    <div class="faq-item">
+                        <button class="faq-trigger" aria-expanded="false">
+                            <span class="faq-question">Apakah XYZ Digital menyediakan dukungan pasca-rilis?</span>
+                            <span class="faq-icon-wrapper">
+                                <i data-lucide="plus" class="faq-plus-icon"></i>
+                                <i data-lucide="minus" class="faq-minus-icon"></i>
+                            </span>
+                        </button>
+                        <div class="faq-panel">
+                            <div class="faq-content">
+                                <p>Ya, tentu saja. Setiap proyek yang kami selesaikan mendapatkan garansi perbaikan bug gratis selama 3 bulan pertama. Kami juga menyediakan paket pemeliharaan (maintenance support SLA) bulanan atau tahunan untuk update fitur, optimasi server, backup berkala, dan pemantauan keamanan berkelanjutan.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 4 -->
+                    <div class="faq-item">
+                        <button class="faq-trigger" aria-expanded="false">
+                            <span class="faq-question">Teknologi apa saja yang biasanya digunakan untuk pengembangan?</span>
+                            <span class="faq-icon-wrapper">
+                                <i data-lucide="plus" class="faq-plus-icon"></i>
+                                <i data-lucide="minus" class="faq-minus-icon"></i>
+                            </span>
+                        </button>
+                        <div class="faq-panel">
+                            <div class="faq-content">
+                                <p>Kami mengadopsi tumpukan teknologi modern berkinerja tinggi. Untuk frontend, kami menggunakan React (Next.js), Vue, atau Tailwind CSS. Di bagian backend, kami mengandalkan Node.js, Go, Python, atau Laravel. Untuk arsitektur server, kami menggunakan Docker, Kubernetes, AWS, Google Cloud Platform, dan serverless computing.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 5 -->
+                    <div class="faq-item">
+                        <button class="faq-trigger" aria-expanded="false">
+                            <span class="faq-question">Bagaimana jaminan keamanan data perusahaan kami?</span>
+                            <span class="faq-icon-wrapper">
+                                <i data-lucide="plus" class="faq-plus-icon"></i>
+                                <i data-lucide="minus" class="faq-minus-icon"></i>
+                            </span>
+                        </button>
+                        <div class="faq-panel">
+                            <div class="faq-content">
+                                <p>Kami menerapkan standar keamanan siber ketat sejak tahap penulisan kode awal (Secure SDLC). Kami menggunakan enkripsi SSL/TLS untuk pengiriman data, enkripsi AES-256 untuk penyimpanan data sensitif, dan mengintegrasikan manajemen akses peran yang ketat (RBAC). Kami juga siap menandatangani NDA (Non-Disclosure Agreement) secara hukum sebelum kerja sama dimulai.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="kontak" class="contact-section section-padding">
+            <div class="container split-layout">
+                <!-- Left: Contact Details -->
+                <div class="contact-details animate-on-scroll">
+                    <span class="section-tag">Kontak</span>
+                    <h2 class="section-title text-left">Konsultasikan Kebutuhan Teknologi Anda</h2>
+                    <p class="contact-paragraph">
+                        Apakah Anda ingin memulai proyek baru, melakukan audit sistem lama, atau sekadar bertanya mengenai solusi yang tepat untuk bisnis Anda? Tim ahli kami siap mendengarkan dan membantu Anda.
+                    </p>
+
+                    <div class="contact-info-list">
+                        <!-- Email -->
+                        <div class="info-item">
+                            <div class="info-icon"><i data-lucide="mail"></i></div>
+                            <div class="info-text">
+                                <span class="info-label">Kirim Email</span>
+                                <a href="mailto:info@xyzdigital.co.id" class="info-val">info@xyzdigital.co.id</a>
+                            </div>
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="info-item">
+                            <div class="info-icon"><i data-lucide="phone"></i></div>
+                            <div class="info-text">
+                                <span class="info-label">Hubungi Kami</span>
+                                <a href="tel:+62218765432" class="info-val">+62 (21) 8765-432</a>
+                            </div>
+                        </div>
+
+                        <!-- Location -->
+                        <div class="info-item">
+                            <div class="info-icon"><i data-lucide="map-pin"></i></div>
+                            <div class="info-text">
+                                <span class="info-label">Kantor Utama</span>
+                                <p class="info-val-text">Sudirman Central Business District (SCBD), Tower 8, Lt. 24, Jakarta Selatan, Indonesia</p>
+                            </div>
+                        </div>
+
+                        <!-- Work Hours -->
+                        <div class="info-item">
+                            <div class="info-icon"><i data-lucide="clock"></i></div>
+                            <div class="info-text">
+                                <span class="info-label">Jam Operasional</span>
+                                <p class="info-val-text">Senin - Jumat | 09.00 - 18.00 WIB</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Media Links -->
+                    <div class="social-links-wrapper">
+                        <span class="social-links-title">Ikuti Kami</span>
+                        <div class="social-links">
+                            <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                            <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+                            <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                            <a href="#" aria-label="GitHub"><i data-lucide="github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Contact Form -->
+                <div class="contact-form-container animate-on-scroll">
+                    <form class="contact-form" id="contact-form">
+                        <h3 class="form-title">Kirim Pesan Langsung</h3>
+                        <p class="form-subtitle">Formulir di bawah terhubung langsung ke layanan dukungan prioritas kami.</p>
+
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" class="form-input" placeholder=" " required>
+                            <label for="name" class="form-label">Nama Lengkap</label>
+                            <span class="focus-line"></span>
+                            <span class="error-msg" id="name-error">Nama tidak boleh kosong</span>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" class="form-input" placeholder=" " required>
+                            <label for="email" class="form-label">Alamat Email</label>
+                            <span class="focus-line"></span>
+                            <span class="error-msg" id="email-error">Masukkan email yang valid</span>
+                        </div>
+
+                        <div class="form-group">
+                            <select id="service" name="service" class="form-input custom-select" required>
+                                <option value="" disabled selected hidden></option>
+                                <option value="digital-transformation">Transformasi Digital & Strategi IT</option>
+                                <option value="cyber-security">Keamanan Siber</option>
+                                <option value="cloud-infrastructure">Infrastruktur Cloud</option>
+                                <option value="custom-software">Pengembangan Software Kustom</option>
+                                <option value="other">Tanya Layanan Lainnya</option>
+                            </select>
+                            <label for="service" class="form-label-select">Layanan yang Dibutuhkan</label>
+                            <span class="focus-line"></span>
+                            <span class="error-msg" id="service-error">Pilih salah satu layanan</span>
+                        </div>
+
+                        <div class="form-group">
+                            <textarea id="message" name="message" class="form-input form-textarea" placeholder=" " rows="4" required></textarea>
+                            <label for="message" class="form-label">Detail Pesan Anda</label>
+                            <span class="focus-line"></span>
+                            <span class="error-msg" id="message-error">Pesan tidak boleh kosong</span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block form-submit-btn" id="submit-btn">
+                            <span>Kirim Pesan</span>
+                            <i data-lucide="send" class="btn-icon"></i>
+                        </button>
+                    </form>
+
+                    <!-- Success Popup -->
+                    <div class="success-popup" id="success-popup">
+                        <div class="popup-icon">
+                            <i data-lucide="check-circle-2"></i>
+                        </div>
+                        <h4 class="popup-title">Pesan Terkirim!</h4>
+                        <p class="popup-desc">Terima kasih telah menghubungi kami. Tim XYZ Digital akan membalas pesan Anda dalam waktu maksimal 1x24 jam kerja.</p>
+                        <button class="btn btn-primary" id="popup-close-btn">Tutup</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Styled Map Placement -->
+            <div class="container map-container animate-on-scroll">
+                <div class="map-wrapper">
+                    <!-- Stylized dark map container simulating modern map iframe -->
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.2538743125215!2d106.80948927495039!3d-6.230222093758005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1m3!2d106.8120642!3d-6.2302221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid" 
+                        width="100%" 
+                        height="380" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade" 
+                        class="google-map"
+                        id="google-map">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="footer-logo">
+                    <div class="logo-icon">
+                        <i data-lucide="cpu"></i>
+                    </div>
+                    <span class="logo-text">XYZ<span class="text-accent">Digital</span></span>
+                </a>
+                <p class="footer-desc">XYZ Digital membantu akselerasi pertumbuhan bisnis modern melalui solusi rekayasa perangkat lunak canggih, migrasi cloud terkelola, dan proteksi keamanan siber menyeluruh.</p>
+            </div>
+
+            <div class="footer-links-col">
+                <h4 class="footer-title">Layanan</h4>
+                <ul class="footer-links">
+                    <li><a href="#layanan">Transformasi Digital</a></li>
+                    <li><a href="#layanan">Keamanan Siber</a></li>
+                    <li><a href="#layanan">Infrastruktur Cloud</a></li>
+                    <li><a href="#layanan">Pengembangan Aplikasi</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links-col">
+                <h4 class="footer-title">Perusahaan</h4>
+                <ul class="footer-links">
+                    <li><a href="#tentang">Tentang Kami</a></li>
+                    <li><a href="#testimoni">Testimoni Klien</a></li>
+                    <li><a href="#kontak">Kontak Kami</a></li>
+                    <li><a href="#">Karir <span class="career-badge">We're hiring</span></a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links-col">
+                <h4 class="footer-title">Legal & Kebijakan</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Kebijakan Privasi</a></li>
+                    <li><a href="#">Syarat & Ketentuan</a></li>
+                    <li><a href="#">Kebijakan Cookie</a></li>
+                    <li><a href="#">Keamanan Data</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <p class="copyright">&copy; 2026 XYZ Digital. Seluruh Hak Cipta Dilindungi.</p>
+            <div class="footer-social">
+                <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                <a href="#" aria-label="GitHub"><i data-lucide="github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script File -->
+    <script src="script.js"></script>
+</body>
+</html>
